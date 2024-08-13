@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+  
+  section {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  td {
+    background-color: #fff;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+  }
+  
+  /* Formulaire de commande */
+  
+  #commande-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #commande-form label {
+    margin-bottom: 10px;
+  }
+  
+  #commande-form input[type="text"], #commande-form input[type="number"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #commande-form select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #commande-form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #commande-form button[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  /* Responsivité */
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+    section {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      padding: 0.5em;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav li {
+      margin-right: 0;
+    }
+    main {
+      padding: 1em;
+    }
+    section {
+      padding: 0.5em;
+    }
+  }
